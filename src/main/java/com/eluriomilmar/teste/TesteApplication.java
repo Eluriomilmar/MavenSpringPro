@@ -1,13 +1,19 @@
 package com.eluriomilmar.teste;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TesteApplication {
+public class TesteApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TesteApplication.class, args);
 	}
 
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println("Coisa");
+
+	}
 }
