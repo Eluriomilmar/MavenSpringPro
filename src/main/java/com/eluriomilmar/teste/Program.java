@@ -19,7 +19,7 @@ public class Program {
 
         TaxService taxService = new TaxService();
         PensionService pensionService = new PensionService();
-        SalaryService salaryService = new SalaryService(taxService, pensionService);
+        SalaryService salaryService = new SalaryService();
 
 
         Employee employee = new Employee(name, grossSalary);
